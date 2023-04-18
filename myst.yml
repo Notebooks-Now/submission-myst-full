@@ -1,0 +1,68 @@
+# See docs at: https://myst-tools.org/docs/mystjs/frontmatter
+version: 1
+project:
+  # Title will be pulled directly from the first header of the article
+  # or you can specify title in the page frontmatter of the article
+  title: Notebooks Now! MyST Submission Template (full)
+  authors:
+    - name: Steve Purves
+      orcid: 0000-0002-0760-5497
+      corresponding: true
+      email: steve@curvenote.com
+      roles:
+        - Investigation
+        - Project administration
+        - Software
+        - Visualization
+      affiliations:
+        - Curvenote
+    - name: Rowan Cockett
+      orcid: 0000-0002-7859-8394
+      corresponding: false
+      role: Project administration
+      affiliations:
+        - Curvenote
+  github: https://github.com/stevejpurves/ign-earthquake-data
+  binder: >-
+    https://mybinder.org/v2/gh/Notebooks-Now/submission-myst-full/HEAD?labpath=la-palma-visualization.ipynb
+  open_access: true
+  license:
+    content: CC-BY-SA-4.0
+    code: MIT
+  keywords:
+    - La Palma
+    - Earthquakes
+  date: 2022-05-11
+  exports:
+    - format: jats
+      article: article.md
+      sub_articles:
+        - notebooks/seismic-monitoring-stations.md
+        - notebooks/visualization-figure-creation-seaborn.ipynb
+      output: la-palma-visualization.xml
+    - format: pdf
+      article: article.md
+      # Sub-articles are currently not supported in the PDF export
+      output: la-palma-visualization.pdf
+      template: agu2019
+      # The following are template-specific options
+      keypoint_1: You may specify 1 to 3 keypoints for this PDF template
+      keypoint_2: These keypoints are complete sentences and less than or equal to 140 characters
+      keypoint_3: They are specific to this PDF template, so they will not appear in other exports
+      journal_name: Notebooks Now!
+      draft: false
+site:
+  title: La Palma Seismicity 2021
+  logo_text: La Palma Seismicity 2021
+  projects:
+    - slug: agu
+      path: .
+  nav:
+    - title: MyST Docs
+      url: https://myst-tools.org/docs/mystjs
+  actions:
+    - title: Notebooks Now!
+      url: https://data.agu.org/notebooks-now/
+  template: book-theme
+  domains:
+    - rowanc1-notebooks_now_myst_full.curve.space
