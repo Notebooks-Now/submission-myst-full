@@ -1,6 +1,6 @@
 # Notebooks Now! Submission Template
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Notebooks-Now/submission-myst-full/HEAD?labpath=la-palma-visualization.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Notebooks-Now/submission-myst-full/HEAD?labpath=notebooks/data-screening.ipynb)
 
 This submission template is for a markdown-based publication with additional supporting notebook and markdown files, as well as supporting data, bibliography, and MyST build configuration.
 
