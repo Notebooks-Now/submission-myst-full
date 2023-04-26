@@ -10,3 +10,4 @@ dependencies:
   - seaborn
   - altair
   - plotly
+  - jupyterlab-myst
