@@ -9,6 +9,25 @@ tags:
   - seismicity
   - la-palma
 thumbnail: images/la-palma-eruption-2022-paper.png
+exports:
+  - format: jats
+    article: article.md
+    sub_articles:
+      - notebooks/seismic-monitoring-stations.md
+      - notebooks/data-screening.ipynb
+      - notebooks/visualization-figure-creation-seaborn.ipynb
+    output: la-palma-visualization.xml
+  - format: pdf
+    article: article.md
+    # Sub-articles are currently not supported in the PDF export
+    output: la-palma-visualization.pdf
+    template: agu2019
+    # The following are template-specific options
+    keypoint_1: You may specify 1 to 3 keypoints for this PDF template
+    keypoint_2: These keypoints are complete sentences and less than or equal to 140 characters
+    keypoint_3: They are specific to this PDF template, so they will not appear in other exports
+    journal_name: Notebooks Now!
+    draft: false
 ---
 
 +++ {"part":"abstract"}
