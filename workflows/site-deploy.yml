@@ -1,0 +1,17 @@
+name: deploy-myst-site
+on:
+  push:
+    branches:
+      - main
+permissions:
+  pull-requests: write
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy site 🚀
+        uses: curvenote/action-myst-publish@main
+        env:
+          CURVENOTE_TOKEN: ${{ secrets.CURVENOTE_TOKEN }}
+        with:
+          latex_packages: apacite lineno morefloats ragged2e soul
