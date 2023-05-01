@@ -1,5 +1,6 @@
 # Notebooks Now! Submission Template
 
+[![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://franklin-notebooks_now_myst_full.curve.space)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Notebooks-Now/submission-myst-full/HEAD?labpath=notebooks/data-screening.ipynb)
 
 This submission template is for a markdown-based publication with additional supporting notebook and markdown files, as well as supporting data, bibliography, and MyST build configuration.
