@@ -19,4 +19,4 @@ jobs:
         with:
           latex_packages: apacite lineno morefloats ragged2e soul
           preview: true
-          preview_subdomain: franklin-nn_full
+          preview_subdomain: franklin-notebooks_now_myst_full
