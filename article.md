@@ -13,7 +13,7 @@ exports:
   - format: jats
     article: article.md
     sub_articles:
-      - notebooks/seismic-monitoring-stations.md
+      - notebooks/seismic-monitoring.md
       - notebooks/data-screening.ipynb
       - notebooks/visualization-figure-creation-seaborn.ipynb
     output: la-palma-visualization.xml

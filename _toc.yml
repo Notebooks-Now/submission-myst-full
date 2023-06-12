@@ -4,6 +4,6 @@
 format: jb-book
 root: article
 chapters:
-  - file: notebooks/seismic-monitoring-stations
+  - file: notebooks/seismic-monitoring
   - file: notebooks/data-screening
   - file: notebooks/visualization-figure-creation-seaborn
