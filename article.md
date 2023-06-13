@@ -138,7 +138,7 @@ The dataset was loaded into a Jupyter notebook [visualization](./notebooks/visua
 
 Earthquake data over time (n=5465) to understand their distributions spatially, by depth, by magnitude and in time.
 
-> This figure uses cell output from the [visualization notebook](./notebooks/visualization-figure-creation-seaborn.ipynb). The first line of the [cell](#eq-timeline) is `#| label: eq-timeline`. Referencing that label pulls in the output of the cell as a figure.
+This figure uses cell output from the [visualization notebook](./notebooks/visualization-figure-creation-seaborn.ipynb). The first line of the [cell](#eq-timeline) is `#| label: eq-timeline`. Referencing that label pulls in the output of the cell as a figure.
 ```
 
 From our analysis in [Figure %s](#timeline), we can see 3 different systems in play.
