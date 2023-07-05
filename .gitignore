@@ -2,6 +2,5 @@
 *.eps
 _build
 
-la-palma-visualization.pdf
-la-palma-visualization.xml
+la-palma-visualization.*
 files/
