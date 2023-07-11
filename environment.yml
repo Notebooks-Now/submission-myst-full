@@ -10,4 +10,5 @@ dependencies:
   - seaborn
   - altair
   - plotly
-  - jupyterlab-myst
+  - jupyterlab>=4.0.0
+  - jupyterlab-myst>=2.0.0

@@ -21,11 +21,11 @@ Similar to the `data/` directory, images for figures should be specified in `ima
 
 ### Bibliography
 
-Bibliography entries may be specified two ways, both described in the [MyST docs](https://myst-tools.org/docs/mystjs/citations). They may be listed explicitly in BibTeX format, by convention in the file `references.bib`, and referenced by key using a `cite` MyST role. They may also be specified as inline DOI links. These do not require full bibliographic information; the data is fetched implicitly on build from the DOI.
+Bibliography entries may be specified two ways, both described in the [MyST docs](https://mystmd.org/guide/citations). They may be listed explicitly in BibTeX format, by convention in the file `references.bib`, and referenced by key using a `cite` MyST role. They may also be specified as inline DOI links. These do not require full bibliographic information; the data is fetched implicitly on build from the DOI.
 
 ## MyST configuration
 
-A `myst.yml` file must be provided to configure notebook metadata and exports. This includes authors, affiliations, licenses, keywords, and [much more](https://myst-tools.org/docs/mystjs/frontmatter).
+A `myst.yml` file must be provided to configure notebook metadata and exports. This includes authors, affiliations, licenses, keywords, and [much more](https://mystmd.org/guide/frontmatter).
 
 ## Building output artifacts
 

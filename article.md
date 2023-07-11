@@ -9,32 +9,12 @@ tags:
   - seismicity
   - la-palma
 thumbnail: images/la-palma-eruption-2022-paper.png
-exports:
-  - format: jats
-    article: article.md
-    sub_articles:
-      - notebooks/seismic-monitoring.md
-      - notebooks/data-screening.ipynb
-      - notebooks/visualization-figure-creation-seaborn.ipynb
-    output: la-palma-visualization.xml
-  - format: pdf
-    article: article.md
-    # Sub-articles are currently not supported in the PDF export
-    output: la-palma-visualization.pdf
-    template: agu2019
-    # The following are template-specific options
-    keypoint_1: You may specify 1 to 3 keypoints for this PDF template
-    keypoint_2: These keypoints are complete sentences and less than or equal to 140 characters
-    keypoint_3: They are specific to this PDF template, so they will not appear in other exports
-    journal_name: Notebooks Now!
-    draft: false
 ---
 
 +++ {"part":"abstract"}
 
-> The article should include an abstract block at the beginning. The block is delimited by `+++` before and after, and you must specify `"part": "abstract"` as JSON metadata on the block opener. This metadata is required for recognizing the content of this cell as the abstract.
->
-> The abstract should begin with a short description of the problem addressed, briefly describe the new data or analyses, then briefly state the main conclusion(s) and how they are supported, and address any uncertainty.
+% The article should include an abstract block at the beginning. The block is delimited by `+++` before and after, and you must specify `"part": "abstract"` as JSON metadata on the block opener. This metadata is required for recognizing the content of this cell as the abstract.
+% The abstract should begin with a short description of the problem addressed, briefly describe the new data or analyses, then briefly state the main conclusion(s) and how they are supported, and address any uncertainty.
 
 In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). We have created an accessible dataset from this and completed preliminary data analysis which shows seismicity originating at two distinct depths, consistent with the model of a two reservoir system feeding the currently very active volcano.
 
@@ -42,11 +22,11 @@ In September 2021, a significant jump in seismic activity on the island of La Pa
 
 # Introduction
 
-> The content of your article is written in MyST markdown and supports [standard markdown typography](https://myst-tools.org/docs/mystjs/typography) and many [directives and roles](https://myst-tools.org/docs/mystjs/syntax-overview) for figures, tables, equations, etc.
+> The content of your article is written in MyST markdown and supports [standard markdown typography](https://mystmd.org/guide/typography) and many [directives and roles](https://mystmd.org/guide/syntax-overview) for figures, tables, equations, etc.
 
 La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands, a Spanish territory situated is the Atlantic Ocean where at their closest point are 100km from the African coast [Figure %s](#map) The island is one of the youngest, remains active and is still in the island forming stage.
 
-> Figures may be added to your article using the [figure directive](https://myst-tools.org/docs/mystjs/figures). They may refer to images saved in your `images/` folder, images from the web, or notebook cell outputs [referenced by label](https://myst-tools.org/docs/mystjs/cross-references#targeting-cells). The `:name:` is used to reference the figure in your text; a reference to the following figure is found in the paragraph above. The figure caption is given as the body of this directive.
+> Figures may be added to your article using the [figure directive](https://mystmd.org/guide/figures). They may refer to images saved in your `images/` folder, images from the web, or notebook cell outputs [referenced by label](https://mystmd.org/guide/cross-references#targeting-cells). The `:name:` is used to reference the figure in your text; a reference to the following figure is found in the paragraph above. The figure caption is given as the body of this directive.
 
 ```{figure} images/la-palma-map.png
 :name: map
@@ -58,11 +38,11 @@ Map of La Palma in the Canary Islands. Image credit [NordNordWest](https://commo
 
 La Palma has been constructed by various phases of volcanism, the most recent and currently active being the _Cumbre Vieja_ volcano, a north-south volcanic ridge that constitutes the southern half of the island.
 
-## Eruption History
+# Eruption History
 
 A number of eruptions were recorded since the colonization of the islands by Europeans in the late 1400s, these are summarized in [Table %s](#history).
 
-> Simple tables may be created using the [list-table directive](https://myst-tools.org/docs/mystjs/tables). Similar to figures, tables may be referenced in the text by their `name`. The caption for this table is the first line of the directive.
+> Simple tables may be created using the [list-table directive](https://mystmd.org/guide/tables). Similar to figures, tables may be referenced in the text by their `name`. The caption for this table is the first line of the directive.
 
 ```{list-table} Recent historic eruptions on La Palma
 :header-rows: 1
@@ -89,7 +69,7 @@ A number of eruptions were recorded since the colonization of the islands by Eur
 
 This equates to an eruption on average every 79 years up until the 1971 event. The probability of a future eruption can be modeled by a Poisson distribution [](#poisson).
 
-> Numbered equations may be defined using the [math directive or in line](https://myst-tools.org/docs/mystjs/math). Equations defined with the math directive may be reference in the text by label.
+> Numbered equations may be defined using the [math directive or in line](https://mystmd.org/guide/math). Equations defined with the math directive may be reference in the text by label.
 
 ```{math}
 :label: poisson
@@ -109,7 +89,7 @@ So following the 1971 eruption the probability of an eruption in the following 5
 
 ## Magma Reservoirs
 
-> You may [add citations two ways](https://myst-tools.org/docs/mystjs/citations). First, you may simply insert a markdown link link to a DOI like so: [](10.1093/nar/22.22.4673). No additional bibliographic information is required for this approach; the reference will be looked up by DOI and added implicitly to the references. Alternatively, you may provide the bibliography directly as `references.bib` BibTeX file, then embed the citation by BibTeX key in your text using the `cite:p` or `cite:t` for parenthetical or textual citations, respectively. The following paragraph provides an example of this. A single paper may combine both DOI and BibTeX citations.
+> You may [add citations two ways](https://mystmd.org/guide/citations). First, you may simply insert a markdown link link to a DOI like so: [](10.1093/nar/22.22.4673). No additional bibliographic information is required for this approach; the reference will be looked up by DOI and added implicitly to the references. Alternatively, you may provide the bibliography directly as `references.bib` BibTeX file, then embed the citation by BibTeX key in your text using the `cite:p` or `cite:t` for parenthetical or textual citations, respectively. The following paragraph provides an example of this. A single paper may combine both DOI and BibTeX citations.
 
 Studies of the magma systems feeding the volcano, such as {cite:p}`marrero2019` has proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).
 
@@ -137,7 +117,6 @@ The dataset was loaded into a Jupyter notebook [visualization](./notebooks/visua
 :name: timeline
 
 Earthquake data over time (n=5465) to understand their distributions spatially, by depth, by magnitude and in time.
-
 This figure uses cell output from the [visualization notebook](./notebooks/visualization-figure-creation-seaborn.ipynb). The first line of the [cell](#eq-timeline) is `#| label: eq-timeline`. Referencing that label pulls in the output of the cell as a figure.
 ```
 

@@ -1,9 +1,10 @@
-# See docs at: https://myst-tools.org/docs/mystjs/frontmatter
+# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
   # Title will be pulled directly from the first header of the article
   # or you can specify title in the page frontmatter of the article
-  title: Notebooks Now! MyST Submission Template (full)
+  title: La Palma Seismicity 2021
+  subtitle: An analysis of earthquake swarms in relation to the 2021 eruption
   authors:
     - name: Steve Purves
       orcid: 0000-0002-0760-5497
@@ -29,6 +30,10 @@ project:
   license:
     content: CC-BY-SA-4.0
     code: MIT
+  subject: Original Submission
+  venue:
+    title: Notebooks Now!
+    url: https://data.agu.org/notebooks-now/
   keywords:
     - La Palma
     - Earthquakes
@@ -37,22 +42,34 @@ project:
     - environment.yml
   resources:
     - README.md
+  banner: ./images/banner.png
   exports:
     - format: meca
       article: article.md
-      output: la-palma-visualization.zip
+      output: meca.zip
+    - format: jats
+      article: article.md
+      sub_articles:
+        - notebooks/seismic-monitoring.md
+        - notebooks/data-screening.ipynb
+        - notebooks/visualization-figure-creation-seaborn.ipynb
+    - format: pdf
+      article: article.md
+      output: article.pdf
+      template: agu2019
+      # The following are template-specific options
+      keypoint_1: You may specify 1 to 3 keypoints for this PDF template
+      keypoint_2: These keypoints are complete sentences and less than or equal to 140 characters
+      keypoint_3: They are specific to this PDF template, so they will not appear in other exports
+      journal_name: Notebooks Now!
+      draft: false
 site:
   title: La Palma Seismicity 2021
   logo_text: La Palma Seismicity 2021
-  projects:
-    - slug: agu
-      path: .
   nav:
     - title: MyST Docs
-      url: https://myst-tools.org/docs/mystjs
+      url: https://mystmd.org/guide
   actions:
     - title: Notebooks Now!
       url: https://data.agu.org/notebooks-now/
-  template: book-theme
-  domains:
-    - franklin-notebooks_now_myst_full.curve.space
+  template: article-theme
