@@ -29,10 +29,10 @@ A `myst.yml` file must be provided to configure notebook metadata and exports. T
 
 ## Building output artifacts
 
-To build PDF/JATS output from your source data, you must have the MyST CLI installed
+To build PDF/JATS output from your source data, you must have the MyST Markdown CLI installed
 
 ```bash
-npm install myst-cli
+npm install -g mystmd
 ```
 
 Then build all exports defined in the `myst.yml` file:
