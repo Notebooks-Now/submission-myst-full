@@ -42,6 +42,8 @@ project:
     - environment.yml
   resources:
     - README.md
+    - data/catalogoComunSV_1663233588717.csv
+    - data/lapalma_ign.csv
   banner: ./images/banner.png
   exports:
     - format: meca
