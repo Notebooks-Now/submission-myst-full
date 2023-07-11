@@ -1,8 +1,6 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  # Title will be pulled directly from the first header of the article
-  # or you can specify title in the page frontmatter of the article
   title: La Palma Seismicity 2021
   subtitle: An analysis of earthquake swarms in relation to the 2021 eruption
   authors:
