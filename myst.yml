@@ -37,9 +37,7 @@ project:
       email: support@curvenote.com
       phone: 123-456-7890
       fax: 123-456-7891
-  github: https://github.com/stevejpurves/ign-earthquake-data
-  binder: >-
-    https://mybinder.org/v2/gh/Notebooks-Now/submission-myst-full/HEAD?labpath=la-palma-visualization.ipynb
+  github: https://github.com/Notebooks-Now/submission-myst-full/
   open_access: true
   license:
     content: CC-BY-SA-4.0
