@@ -25,14 +25,9 @@ project:
         - curvenote
   affiliations:
     - id: curvenote
-      name: Curvenote
-      department: Engineering Team
-      address: 123 Main St.
-      city: NYC
-      state: New York
-      postal_code: '10001'
-      country: USA
-      isni: '0000000000000000'
+      name: Curvenote Inc.
+      department: Publications Team
+      country: Canada
       url: https://curvenote.com
       email: support@curvenote.com
       phone: 123-456-7890
@@ -43,19 +38,11 @@ project:
     content: CC-BY-SA-4.0
     code: MIT
   funding:
-    - statement: This work was supported by Notebooks Now! at AGU.
-      open_access: Users are allowed to read, download, copy, distribute, print, search, or link to this template, or use it for any other lawful purpose, without asking prior permission
-      id: agu-0000
-      sources:
-        - id: agu
-          name: American Geophysical Union
-      investigators:
-        - spurves
-        - rcockett
-      recipients:
-        - name: Franklin Koch
-          affiliations:
-            - curvenote
+    - statement: Supported by Notebooks Now! at AGU
+      id: 10070
+      source:
+        - name: Alfred P. Sloan Foundation
+          doi: http://dx.doi.org/10.13039/100000879
   subject: Original Submission
   venue:
     title: Notebooks Now!
@@ -63,7 +50,7 @@ project:
   keywords:
     - La Palma
     - Earthquakes
-  date: 2022-05-11
+  date: 2022-10-11
   requirements:
     - environment.yml
   resources:
@@ -71,6 +58,9 @@ project:
     - data/catalogoComunSV_1663233588717.csv
     - data/lapalma_ign.csv
   banner: ./images/banner.png
+  options:
+    journal_name: Notebooks Now!
+    draft: false
   exports:
     - format: meca
       article: article.md
@@ -85,15 +75,14 @@ project:
       article: article.md
       output: article.pdf
       template: agu2019
-      # The following are template-specific options
-      keypoint_1: You may specify 1 to 3 keypoints for this PDF template
-      keypoint_2: These keypoints are complete sentences and less than or equal to 140 characters
-      keypoint_3: They are specific to this PDF template, so they will not appear in other exports
-      journal_name: Notebooks Now!
-      draft: false
+    - format: tex
+      article: article.md
+      output: tex.zip
+      template: agu2019
 site:
   title: La Palma Seismicity 2021
-  logo_text: La Palma Seismicity 2021
+  options:
+    logo_text: La Palma Seismicity 2021
   nav:
     - title: MyST Docs
       url: https://mystmd.org/guide

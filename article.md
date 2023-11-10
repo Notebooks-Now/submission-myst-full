@@ -9,16 +9,18 @@ tags:
   - seismicity
   - la-palma
 thumbnail: images/la-palma-eruption-2022-paper.png
+abstract: |
+  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). We have created an accessible dataset from this and completed preliminary data analysis which shows seismicity originating at two distinct depths, consistent with the model of a two reservoir system feeding the currently very active volcano.
+# AGU requires a Data Availability Statement for the underlying data needed to understand, evaluate, and build upon the reported research at the time of peer review and publication.
+data_availability: |
+  A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool [is available on GitHub](https://github.com/stevejpurves/ign-earthquake-data) along with a copy of recently updated data.
+acknowledgments: |
+  The authors would like to thank the Notebooks Now working groups for their help on creating these templates and advising on metadata.
+keypoints:
+  - You may specify 1 to 3 keypoints for this PDF template
+  - These keypoints are complete sentences and less than or equal to 140 characters
+  - They are specific to this PDF template, so they will not appear in other exports plain
 ---
-
-+++ {"part":"abstract"}
-
-% The article should include an abstract block at the beginning. The block is delimited by `+++` before and after, and you must specify `"part": "abstract"` as JSON metadata on the block opener. This metadata is required for recognizing the content of this cell as the abstract.
-% The abstract should begin with a short description of the problem addressed, briefly describe the new data or analyses, then briefly state the main conclusion(s) and how they are supported, and address any uncertainty.
-
-In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). We have created an accessible dataset from this and completed preliminary data analysis which shows seismicity originating at two distinct depths, consistent with the model of a two reservoir system feeding the currently very active volcano.
-
-+++
 
 # Introduction
 
@@ -89,16 +91,16 @@ So following the 1971 eruption the probability of an eruption in the following 5
 
 ## Magma Reservoirs
 
-> You may [add citations two ways](https://mystmd.org/guide/citations). First, you may simply insert a markdown link to a DOI like so: [](10.1093/nar/22.22.4673). No additional bibliographic information is required for this approach; the reference will be looked up by DOI and added implicitly to the references. Alternatively, you may provide the bibliography directly as `references.bib` BibTeX file, then embed the citation by BibTeX key in your text using the `cite:p` or `cite:t` for parenthetical or textual citations, respectively. The following paragraph provides an example of this. A single paper may combine both DOI and BibTeX citations.
+> You may [add citations two ways](https://mystmd.org/guide/citations). First, you may simply insert a markdown link to a DOI like so: [](10.1093/nar/22.22.4673). No additional bibliographic information is required for this approach; the reference will be looked up by DOI and added implicitly to the references. Alternatively, you may provide the bibliography directly as `references.bib` BibTeX file, then embed the citation by BibTeX key in your text using the `@cite2023` or `[@cite2023; @cite2023b]` for narrative or parenthetical citations, respectively. The following paragraph provides an example of this. A single paper may combine both DOI and BibTeX citations.
 
-Studies of the magma systems feeding the volcano, such as {cite:p}`marrero2019` has proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).
+Studies of the magma systems feeding the volcano, such as @marrero2019 has proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).
 
 ```{figure} images/reservoirs.png
 :name: reservoirs
 :align: center
 :width: 100%
 
-Proposed model from {cite:t}`marrero2019`.
+Proposed model from @marrero2019.
 ```
 
 In this paper, we look at recent seismicity data to see if we can see evidence of such a system action, see [Figure %s](#reservoirs).
@@ -107,7 +109,7 @@ In this paper, we look at recent seismicity data to see if we can see evidence o
 
 > All data used in the notebook should be present in the `data/` folder so notebooks may be executed in place with no additional input.
 
-The earthquake dataset used in our analysis was generated from the [IGN web portal](https://www.ign.es/web/resources/volcanologia/tproximos/canarias.html) this is public data released under a permissive license. Data recorded using the network of [Seismic Monitoring Stations](#stations) on the island. A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool [is available on GitHub](https://github.com/stevejpurves/ign-earthquake-data) along with a copy of recently updated data.
+The earthquake dataset used in our analysis was generated from the [IGN web portal](https://www.ign.es/web/resources/volcanologia/tproximos/canarias.html) this is public data released under a permissive license. Data recorded using the network of Seismic Monitoring Stations on the island. A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool [is available on GitHub](https://github.com/stevejpurves/ign-earthquake-data) along with a copy of recently updated data.
 
 # Results
 
@@ -130,12 +132,4 @@ Subsequently, high magnitude events begin occurring at 30-40km depths correspond
 
 # Conclusions
 
-From the analysis of the earthquake data collected and published by IGN for the period of 11 September through to 9 November 2021. Visualization of the earthquake events at different depths appears to confirm the presence of both mantle and crustal reservoirs as proposed by {cite:t}`marrero2019`.
-
-+++ {"part":"availability"}
-
-> Data availability statement should be specified in a separate block with metadata `"part": "availability"`, similar to the abstract.
->
-> AGU requires an Availability Statement for the underlying data needed to understand, evaluate, and build upon the reported research at the time of peer review and publication.
-
-A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool [is available on GitHub](https://github.com/stevejpurves/ign-earthquake-data) along with a copy of recently updated data.
+From the analysis of the earthquake data collected and published by IGN for the period of 11 September through to 9 November 2021. Visualization of the earthquake events at different depths appears to confirm the presence of both mantle and crustal reservoirs as proposed by @marrero2019.
