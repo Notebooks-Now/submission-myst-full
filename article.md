@@ -11,6 +11,8 @@ tags:
 thumbnail: images/la-palma-eruption-2022-paper.png
 abstract: |
   In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). We have created an accessible dataset from this and completed preliminary data analysis which shows seismicity originating at two distinct depths, consistent with the model of a two reservoir system feeding the currently very active volcano.
+summary: |
+  In September 2021, heightened seismic activity on La Palma signaled an ongoing volcanic crisis; analysis of Instituto Geográfico Nacional data reveals seismicity at two depths, supporting a dual-reservoir system for the active volcano.
 # AGU requires a Data Availability Statement for the underlying data needed to understand, evaluate, and build upon the reported research at the time of peer review and publication.
 data_availability: |
   A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool [is available on GitHub](https://github.com/stevejpurves/ign-earthquake-data) along with a copy of recently updated data.
