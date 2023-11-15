@@ -43,7 +43,7 @@ jobs:
           echo "/home/runner/bin" >> $GITHUB_PATH
       - name: Install TeX packages
         run: |
-          tlmgr install apacite lineno morefloats ragged2e soul
+          tlmgr install apacite lineno morefloats ragged2e soul glossaries
       - name: Build all content (PDF, JATS, MECA)
         run: myst build --all
       - name: Build Static HTML Assets
