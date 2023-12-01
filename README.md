@@ -40,3 +40,23 @@ Then build all exports defined in the `myst.yml` file:
 ```bash
 myst build --all
 ```
+
+## Dependency management
+
+Please use `pip` and `pip-compile` for dependency management and virtual environment configuration. The `pip-compile` workflow results in fine-grained, pinned dependencies that improves the lifetime of a submission.
+
+To manage your dependencies, edit the `requirements.in` file, adding high level packages there, pin those packages only if necessary for your case.
+
+Then in the same folder ad `requirements.in` run `pip-compile`. This will update or create the `requirements.txt` file with pinned dependencies. The latest versions of `requirements.in` and `requirements.txt` should be commited to the repository.
+
+Then setup your virtual environment as normal:
+
+```bash
+python -n venv env
+source env/bin/activate
+python -m pip install -r requirements.txt
+```
+
+### Installing `pip-compile`
+
+We recommand installing `pip-compile` in your base python environment, not in your reproducible execution environment.

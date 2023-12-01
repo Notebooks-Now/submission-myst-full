@@ -1,0 +1,9 @@
+numpy
+matplotlib
+pandas
+scipy
+seaborn
+altair
+plotly
+jupyterlab>=4.0.0
+jupyterlab-myst>=2.0.0
