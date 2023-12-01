@@ -1,6 +1,9 @@
 .ipynb_checkpoints
 *.eps
 _build
+.DS_Store
+env/
+environment.yml
 
 article.pdf
 meca.zip
