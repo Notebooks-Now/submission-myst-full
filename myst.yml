@@ -79,6 +79,7 @@ project:
       article: article.md
       output: tex.zip
       template: agu2019
+  jupyter: true
 site:
   title: La Palma Seismicity 2021
   options:
